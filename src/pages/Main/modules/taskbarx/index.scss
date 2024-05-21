@@ -1,0 +1,304 @@
+
+div#windows11-taskbar {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+div#windows11-taskbar {
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    transition: 0.5s;
+    background-color: var(--currentColor);
+    backdrop-filter: saturate(3) blur(20px);
+
+    div.task-apps {
+        width: 2.5rem;
+        height: 2.5rem;
+        transition: 0.5s;
+        margin: auto 0.1875rem;
+        border-radius: 0.25rem;
+
+        i {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.25rem;
+            transition: 0.4s ease-in-out;
+            background-color: rgba(254,254,254,0);
+        }
+
+        i:active {
+            transform: scale(0.7);
+            transform-origin: center;
+            transition: 0.1s ease-in-out;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            background-color: rgba(255,255,255,0.5);
+        }
+    }
+
+    div.taskbar-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.taskbar-center {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    div.taskbar-center {
+        width: 37.5rem;
+        height: 100%;
+        margin: 0 auto;
+        min-width: 37.5rem;
+    }
+
+    div.taskbar-center {
+
+        div.task-search {
+            margin: auto 0;
+            display: flex;
+            align-items: center;
+        }
+
+        div.task-search {
+            margin-left: 5px;
+            width: 11.5625rem;
+            height: 1.8750rem;
+            padding-left: 0.625rem;
+            border-radius: 0.25rem;
+        }
+
+        div.task-search {
+            position: relative;
+            background-color: rgba(243,246,253,1);
+        }
+
+        div.task-search::before {
+            inset: 0;
+            content: "";
+            padding: 2px;
+            position: absolute;
+            border-radius: 0.25rem;
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+            mask-clip: content-box,border-box;
+            mask-image: linear-gradient(#ffffff 0 0),linear-gradient(#ffffff 0 0);
+            background: linear-gradient(120deg, var(--dominColor), var(--seconColor));
+        }
+
+        div.task-application {
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            margin-left: 5px;
+            align-items: center;
+
+            div.application {
+                transform-origin: center;
+                animation: blockShow 0.8s ease-in-out;
+                transition: width cubic-bezier(.85,.14,.14,.85) 0.25s;
+            }
+
+            div.application {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            div.application {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: auto 0.1875rem;
+                border-radius: 0.3125rem;
+
+                div.application-progress {
+                    height: 4px;
+                    margin-top: 3px;
+                    transition: 0.1s;
+                    border-radius: 0.25rem;
+                    background: linear-gradient(120deg, var(--dominColor), var(--seconColor));
+                }
+
+                i,svg,img {
+                    width: 75%;
+                    height: 75%;
+                    display: block;
+                    margin-top: 3px;
+                    transition: 0.4s ease-in-out;
+                    // animation: applicationShow 800ms;
+                    background-color: rgba(254,254,254,0);
+
+                    &:active {
+                        transform: scale(0.7);
+                        transform-origin: center;
+                        transition: 0.1s ease-in-out;
+                    }
+                }
+
+                // 因为图标过大，进行缩小处理
+                img#task-100 {
+                    transform: scale(0.85);
+                }
+            }
+        }
+
+        div.task-search {
+            div.icon-box {
+                width: 1.25rem;
+                height: 1.25rem;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: var(--dominColor);
+                }
+            }
+
+            input.task-search-content {
+                width: 75%;
+                border: none;
+                outline: none;
+                height: 1.25rem;
+                margin-left: 0.3125rem;
+                padding-right: -1.25rem;
+                background-color: transparent;
+            }
+
+            input.task-search-content::placeholder {
+                color: var(--dominColor);
+            }
+        }
+    }
+
+    div.task-apps-right {
+        display: flex;
+        position: absolute;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    div.task-apps-right {
+        width: 18.75rem;
+        height: auto;
+        float: right;
+        display: flex;
+        right: 0.9375rem;
+    }
+
+    div.task-apps-right {
+        div.task-right-apps {
+            width: 6.25rem;
+            height: 2.5rem;
+            transition: 0.5s;
+            padding: 5px 10px;
+
+            &:hover {
+                transition: 0.5s;
+                background-color: rgba(255,255,255,0.5);
+            }
+        }
+
+        div.task-right-apps.taskapps-dates {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        div.task-right-apps.taskapps-dates {
+            right: 0.9375rem;
+            border-radius: 0.25rem;
+        }
+
+        div.task-right-apps.taskapps-more {
+            width: 24px;
+            display: flex;
+            border-radius: 0.25rem;
+
+            svg {
+                width: 60%;
+                height: 60%;
+                margin: auto;
+            }
+        }
+
+        div.task-right-apps.taskapps-status {
+            display: flex;
+            border-radius: 0.25rem;
+            justify-content: space-between;
+
+            div.status-item {
+                width: 1.75rem;
+                height: auto;
+                display: flex;
+
+                i {
+                    width: 80%;
+                    height: 80%;
+                    margin: auto;
+                }
+            }
+        }
+
+        div.task-right-apps.taskapps-dates > span.box {
+                font-weight: 400;
+                font-size: 0.625rem;
+                white-space: nowrap;
+        }
+    }
+
+    div.taskapps-widget {
+        float: left;
+        position: absolute;
+        margin-left: 0.9375rem;
+    }
+}
+
+@keyframes blockShow {
+    0% {
+        position: absolute;
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(0.725);
+    }
+    100% {
+        position: relative;
+        transform: scale(1.00);
+    }
+}
+
+@keyframes applicationShow {
+    0% {
+        margin-top: -1px;
+        margin-bottom: 0;
+    }
+    40% {
+        margin-top: -6px;
+        margin-bottom: 5px;
+        transform: scaleY(1.1);
+        transform-origin: bottom;
+    }
+    60% {
+        margin-top: 1px;
+        margin-bottom: -2px;
+        transform: scaleY(0.8);
+        transform-origin: bottom;
+    }
+    100% {
+        margin-top: -1px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,51 @@
+
+div.windows-info {
+    width: 98%;
+    height: 75px;
+    display: flex;
+    transition: 0.5s;
+    margin-bottom: 15px;
+
+    div.home-screen {
+        width: 150px;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        margin-right: 15px;
+        border-radius: 5px;
+        border: 3px solid #333333;
+
+        img.desktop-screen {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.35);
+            }
+        }
+    }
+
+    div.desktop-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    div.desktop-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 3px;
+    }
+
+    div.desktop-content {
+        span.desktop-name {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        span.desktop-code {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+div#windows11-childbox {
+    display: flex;
+    white-space: nowrap;
+    box-shadow: 3px 3px 20px 3px var(--layoutShadowColor);
+}
+
+div#windows11-childbox {
+    position: fixed;
+    transition: 0.3s;
+    overflow: hidden;
+    max-width: 11.25rem;
+    border-radius: 0.5rem;
+}
+
+div#windows11-childbox {
+    z-index: 0;
+    right: 200px;
+    width: 11.25rem;
+    color: #222222;
+    height: 3.4375rem;
+    background-color: var(--currentColor);
+}
+
+div#windows11-childbox {
+    span.chlid-text {
+        margin: auto;
+    }
+}

@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color EmojiEmoji!important;
+}
+
+a {
+    color: #3b91d8!important;
+    text-decoration: none!important;
+}
+
+::-webkit-scrollbar {
+    display: none!important;
+}
+
+html {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    overflow-y: scroll;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(218,232,241,1.0);
+}
+
+header#header {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+}
+
+header#header {
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 0.25rem;
+}
+
+header#header {
+    img.jpeg {
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+
+    span.title {
+        width: 100%;
+        margin: auto;
+        color: #3b91d8;
+        font-size: 2.5rem;
+        font-weight: 700;
+        position: absolute;
+        text-align: center;
+    }
+
+    &:hover {
+        img.jpeg {
+            transform: scale(1.25);
+        }
+    }
+}
+
+div#twikoo {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+
+    div.tk-comment {
+        margin-bottom: 10px;
+    }
+
+    time {
+        color: #999999;
+    }
+    
+    div.tk-footer {
+        display: none;
+    }
+
+    div.tk-extras {
+        margin-top: 10px;
+    }
+    
+    div.tk-avatar {
+        display: grid;
+        border: 3px solid #ffffff;
+
+        img.tk-avatar-img {
+            margin: auto;
+            transition: 1s;
+        }
+
+        &:hover {
+            img.tk-avatar-img {
+                transform: scale(1.25);
+            }
+        }
+    }
+
+    strong.tk-nick {
+        color: #3b91d8;
+    }
+
+    span.tk-comments-count {
+        color: #3b91d8;
+    }
+
+    div.tk-content {
+        color: #666666;
+    }
+
+    div.tk-admin.__show {
+        border-radius: 0.25rem;
+
+        div.tk-content {
+            color: #ffffff;
+        }
+
+        a.tk-admin-close {
+            position: absolute;
+        }
+    }
+
+    div.tk-login {
+        width: 90%;
+        margin: 0 auto;
+
+        div.tk-login-title {
+            margin-top: 20px;
+        }
+    }
+}

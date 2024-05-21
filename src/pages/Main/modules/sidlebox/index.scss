@@ -1,0 +1,222 @@
+
+div#windows11-sidebox {
+    height: 90%;
+    resize: horizontal;
+    margin-bottom: 3.5rem;
+}
+
+div#windows11-sidebox {
+    min-height: 90%;
+    max-height: 90%;
+    max-width: 98.5%;
+    overflow: hidden;
+    position: absolute;
+    min-width: 47.5rem;
+}
+
+div#windows11-sidebox {
+    z-index: 1;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    backdrop-filter: blur(1.25rem);
+    background-color: var(--sideboxColor);
+    box-shadow: 3px 3px 20px 3px var(--layoutShadowColor);
+}
+
+div#windows11-sidebox {
+    div.sidebox-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.sidebox-content {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    div.sidebox-content {
+        div.sidebox-head {
+            display: flex;
+            align-items: center;
+        }
+
+        div.sidebox-head {
+            width: 100%;
+            height: 2.8125rem;
+            margin-top: 0.625rem;
+            min-height: 2.8125rem;
+        }
+
+        div.sidebox-head {
+            span.sidebox-time {
+                font-size: 1.35rem;
+                white-space: nowrap;
+            }
+
+            div.sidebox-container {
+                width: 10rem;
+                height: 100%;
+                display: flex;
+                margin-left: auto;
+                align-items: center;
+                justify-content: space-between;
+
+                div.container-box {
+                    height: 100%;
+                    display: flex;
+                    transition: 0.5s;
+                    width: 2.8125rem;
+                    border-radius: 0.5rem;
+                    background-color: transparent;
+
+                    &:hover {
+                        transition: 0.5s;
+                        background-color: rgba(255,255,255,0.5);
+                    }
+                }
+
+                div.container-box{
+                    i {
+                        width: 80%;
+                        height: 80%;
+                        margin: auto;
+                        transition: 0.5s;
+                        filter: contrast(0);
+                        -webkit-filter: contrast(0);
+                    }
+
+                    svg {
+                        width: 60%;
+                        height: 60%;
+                        margin: auto;
+                        transition: 0.5s;
+                        filter: contrast(0);
+                        -webkit-filter: contrast(0);
+                    }
+
+                    div.sidebox-avatar {
+                        width: 65%;
+                        height: 65%;
+                        margin: auto;
+                        border-radius: 50%;
+                    }
+
+                    div.sidebox-avatar {
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url(../../../../image/background-avatar.jpg);
+                    }
+
+                    div.sidebox-avatar:active {
+                        transform: scale(0.7);
+                        transform-origin: center;
+                        transition: 0.1s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        div.message-list {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: 10px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+        }
+
+        div.sidebox-message {
+            width: 100%;
+            transition: 1s;
+            height: 2.8125rem;
+            margin-top: 0.625rem;
+            min-height: 2.8125rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.625rem;
+
+            div.message-container {
+                display: flex;
+                align-items: center;
+            }
+
+            div.message-container {
+                width: 99%;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            div.message-container {
+                div.close-button {
+                    display: flex;
+                    cursor: pointer;
+                    margin-left: auto;
+                }
+
+                div.close-button {
+                    width: 2.1875rem;
+                    height: 2.1875rem;
+                    position: relative;
+                    margin-right: 2.5px;
+                }
+
+                div.close-button::before {
+                    inset: 0;
+                    content: "";
+                    padding: 2px;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    -webkit-mask-composite: xor;
+                            mask-composite: exclude;
+                    mask-clip: content-box,border-box;
+                    mask-image: linear-gradient(#ffffff 0 0),linear-gradient(#ffffff 0 0);
+                    background: linear-gradient(120deg, var(--dominColor), var(--seconColor));
+                }
+
+                div.close-button > svg {
+                    width: 55%;
+                    height: 55%;
+                    margin: auto;
+
+                    path {
+                        fill: var(--dominColor);
+                    }
+                }
+
+                a {
+                    margin-left: auto;
+                }
+
+                div.message-info {
+                    display: flex;
+                    align-items: center;
+
+                    div.icon-box {
+                        width: 1.5625rem;
+                        height: 1.5625rem;
+                        margin-left: 0.3125rem;
+                        margin-right: 0.625rem;
+                    }
+
+                    div.icon-box > i,svg {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        div.sidebox-message.tips-normal {
+            background-color: #f7f7f7;
+        }
+
+        div.sidebox-message.tips-warnning {
+            background-color: #FDE7E9;
+        }
+    }
+}

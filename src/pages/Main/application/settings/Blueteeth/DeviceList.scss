@@ -1,0 +1,56 @@
+
+ul.blueteeth-device-list {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    margin-bottom: 15px;
+
+    li.blueteeth-device-list-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li.blueteeth-device-list-item {
+        width: 200px;
+        height: 100%;
+        transition: 0.5s;
+        margin-right: 25px;
+        border-radius: 5px;
+        background-color: var(--settingLayoutColor);
+    }
+
+    li.blueteeth-device-list-item:hover {
+        background-color: #ffffff65;
+    }
+
+    li.blueteeth-device-list-item {
+        div.icon-box {
+            width: 92px;
+            height: 92px;
+            margin: auto;
+            display: flex;
+
+            i,svg {
+                margin: auto;
+            }
+        }
+
+        span.device-name {
+            margin: auto;
+            color: #999999;
+            font-size: 24px;
+            margin-top: 15px;
+        }
+    }
+}
+
+button.show-more-device {
+    width: 98%;
+    height: 40px;
+    cursor: pointer;
+    color: #999999;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    background-color: var(--settingLayoutColor);
+}

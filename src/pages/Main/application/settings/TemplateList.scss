@@ -1,0 +1,83 @@
+
+ul.template-list {
+    width: 98%;
+    height: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    li.card-item {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        transition: 0.5s;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        background-color: var(--settingLayoutColor);
+
+        div.icon-box {
+            width: 65px;
+            height: 100%;
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+
+            i,svg {
+                width: 40%;
+                height: 40%;
+                margin: auto;
+            }
+        }
+
+        div.text-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            span.card-text {
+                color: #999999;
+                font-size: 14px;
+            }
+        }
+
+        div.link-box {
+            width: 65px;
+            height: 100%;
+            display: flex;
+            margin-left: auto;
+            margin-right: 20px;
+
+            i,svg {
+                margin: auto;
+            }
+        }
+
+        div.button-box {
+            right: 80px;
+            width: auto;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+
+            button.button {
+                width: 135px;
+                height: 35px;
+                border: none;
+                cursor: pointer;
+                color: #ffffff;
+                border-radius: 5px;
+                background-color: #999999;
+            }
+        }
+
+        &:hover {
+            background-color: var(--settingLayoutColor2);
+        }
+    }
+}

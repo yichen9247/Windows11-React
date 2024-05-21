@@ -1,0 +1,38 @@
+
+div#window-layout-notepad-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#window-layout-notepad-screen {
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s;
+    position: absolute;
+    height: calc(100% - 55px);
+    background-color: var(--currentColor);
+
+    textarea.notepad-content {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: calc(100% - 20px);
+        background-color: transparent;
+    }
+}
+
+div#window-layout-notepad-screen {
+    img.application-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+}
+
+div.ant-drawer-header-title {
+    text-align: center;
+}

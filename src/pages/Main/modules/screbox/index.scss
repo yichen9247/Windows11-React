@@ -1,0 +1,168 @@
+
+div#windows11-screen {
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+div#windows11-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: margin-top ease 1s;
+    background-image: var(--background);
+}
+
+div#windows11-screen {
+    div.screen-content {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backdrop-filter: blur(1.25rem);
+
+        div.screen-box {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            overflow: hidden;
+            padding-top: 7.5%;
+
+            div.time-box {
+                width: 100%;
+                height: 12.5rem;
+                text-align: center;
+
+                span.screen-time {
+                    transition: 0.5s;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-size: 6rem;
+                }
+
+                span.screen-time {
+                    filter: invert(0); 
+                    -webkit-filter: invert(0);
+                }
+
+                p.screen-date {
+                    filter: invert(0); 
+                    -webkit-filter: invert(0);
+                }
+
+                p.screen-date {
+                    transition: 0.5s;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-top: 0.625rem;
+                }
+            }
+        }
+
+        div.login-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        div.login-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            transition: bottom ease 1s;
+
+            div.box-content {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            div.box-content {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            div.box-content {
+                img.user-avatar {
+                    width: 145px;
+                    height: 145px;
+                    border-radius: 50%;
+                    border: 5px solid #FFFFFF;
+                }
+
+                img.user-avatar:hover{
+                    transform: rotate(360deg);
+                    transition: transform 2s ease;
+                }
+
+                span.user-name {
+                    filter: invert(0); 
+                    -webkit-filter: invert(0);
+                }
+
+                span.user-name {
+                    font-size: 24px;
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+
+                div.button-sheet {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: flex-end;
+
+                    input.login-input {
+                        outline: none;
+                        opacity: 0.85;
+                        padding: 0 10px;
+                    }
+    
+                    input.login-input {
+                        width: 240px;
+                        height: 25px;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                        border: 3px solid #FFFFFF;
+                        background-color: #b2b1b1;
+                    }
+    
+                    input.login-input:not(:placeholder-shown) {
+                        color: #FFFFFF;
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button.button {
+    opacity: 0.85;
+    margin-top: 20px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+
+button.button {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #FFFFFF;
+    background-color: #b2b1b1;
+}
+
+button.button > i,svg {
+    transition: 0.5s;
+}
+
+button.button:active svg {
+    transform: scale(0.7);
+    transform-origin: center;
+    transition: 0.1s ease-in-out;
+}

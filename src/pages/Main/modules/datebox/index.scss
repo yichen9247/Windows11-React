@@ -1,0 +1,71 @@
+
+#windows11-datebox {
+    bottom: 10%;
+    width: 21rem;
+    height: 25rem;
+    position: fixed;
+    min-width: 21rem;
+    transition: 0.5s;
+    max-height: 26.25rem;
+}
+
+div#windows11-datebox {
+    border-radius: 5px;
+    box-shadow: 0 0 6px #00000040;
+    background-color: var(--currentColor);
+    box-shadow: 3px 3px 20px 3px var(--layoutShadowColor);
+}
+
+div#windows11-datebox {
+    div.datebox-head {
+        width: 100%;
+        display: flex;
+        height: 3.125rem;
+        border-bottom: 0.0625rem solid #dddddd;
+        background-color: rgba(0, 0, 0, 0.033);
+
+        div.head-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        div.head-inner {
+            width: 85%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        div.head-inner {
+            div.close-box {
+                display: flex;
+                margin-left: auto;
+            }
+
+            div.close-box {
+                width: 2.1875rem;
+                height: 2.1875rem;
+                position: relative;
+                border-radius: 0.5rem;
+                background-color: var(--dateboxColor2);
+            }
+
+            div.close-box > svg {
+                width: 40%;
+                height: 40%;
+                margin: auto;
+            }
+        }
+    }
+
+    div.datebox-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        height: calc(100% - 3.125rem - 10px);
+
+        div {
+            margin: auto;
+        }
+    }
+}

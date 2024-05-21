@@ -1,0 +1,249 @@
+
+div#window-layout-browse-screen {
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 14px;
+        display: block;
+        border-radius: 7px;
+        scrollbar-color: #dddddd;
+        scrollbar-track-color: #999999;
+        scrollbar-face-color: #dddddd;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #adadaba4;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #dddddd;
+    }
+
+    div.browse-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.browse-main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("./src/image/background.jpg");
+
+        div.content-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.5s;
+            position: absolute;
+            background-color: var(--currentColor);
+        
+            iframe.content {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+
+        div.search-box {
+            display: flex;
+            transition: 0.5s;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        div.search-box {
+            width: 50%;
+            height: 55px;
+            background-color: rgba(240, 255, 246,0.75);
+            box-shadow: 3px 3px 20px 3px var(--layoutShadowColor);
+        }
+
+        div.search-box {
+            div.icon-box {
+                width: 55px;
+                height: 100%;
+                display: flex;
+                margin-left: 5px;
+    
+                i,svg {
+                    width: 55%;
+                    height: 55%;
+                    margin: auto;
+                }
+            }
+    
+            input.input-content {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                padding-top: 2px;
+                padding-left: 5px;
+                padding-right: 20px;
+            }
+    
+            input.input-content::placeholder {
+                font-size: 18px;
+            }
+    
+            input.input-content:not(:placeholder-shown) {
+                color: #666666;
+                font-size: 19px;
+            }
+        }
+
+        div.search-box:has(input.input-content:focus) {
+            background-color: rgba(240, 241, 255, 0.75);
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2),
+                0px 0px 0px rgba(255, 255, 255, 0.8),
+                inset 6px 6px 12px rgba(0, 0, 0, 0.2),
+                inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    ul.quick-box {
+        width: 50%;
+        height: auto;
+        display: grid;
+        margin-top: 50px;
+        justify-content: space-between;
+        grid-template-columns: 18% 18% 18% 18% 18%;
+
+        li.quick-box-item {
+            position: relative;
+        }
+
+        li.quick-box-item {
+            cursor: pointer;
+            font-size: 32px;
+            font-weight: 700;
+            transition: 0.2s;
+            overflow: hidden;
+        }
+
+        li.quick-box-item {
+            border-radius: 10px;
+            border-radius: 5px;
+            margin-bottom: 35px;
+            padding-bottom: 100%;
+        }
+
+        li.quick-box-item {
+            div.content-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            div.content-box {
+                transition: 0.2s;
+                background-color: rgba(240, 255, 246,0.75);
+                box-shadow: 3px 3px 20px 3px var(--layoutShadowColor);
+            }
+
+            div.content-box:hover {
+                background-color: rgba(240, 241, 255, 0.75);
+                box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2),
+                    0px 0px 0px rgba(255, 255, 255, 0.8),
+                    inset 6px 6px 12px rgba(0, 0, 0, 0.2),
+                    inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+            }
+
+            div.content-box {
+                div.icon-box {
+                    width: 45%;
+                    height: 45%;
+                    margin: auto;
+                    display: flex;
+                    
+                    i,svg {
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.check-box {
+    width: 98%;
+    height: 45px;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgb(153, 153, 153);
+
+    span.check-box-text {
+        font-size: 16px;
+        line-height: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: rgba(0, 0, 0, 0.88);
+    }
+
+    div.ant-select-selector {
+        border: none!important;
+        background-color: transparent!important;
+
+        span.ant-select-selection-item {
+            color: #1677ff;
+            font-size: 16px;
+        }
+    }
+
+    span.ant-select-arrow {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.88)!important;
+    }
+}
+
+div#window-layout-browse-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#window-layout-browse-screen {
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s;
+    position: absolute;
+    height: calc(100% - 55px);
+    background-color: var(--currentColor);
+}
+
+div#window-layout-browse-screen {
+    img.application-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+}
+
+div.ant-drawer-header-title {
+    text-align: center;
+}
